@@ -3,9 +3,21 @@ import { syntax } from "./syntax";
 
 const fs = require("fs").promises;
 
-const generatre = () => ({
+const generateThemeDefault = () => ({
   name: "TEMPLATE",
+  colors: { ...theme({ scheme: "default" }) },
+  tokenColors: [...syntax],
+  semanticHighlighting: true,
+});
+const generateThemeFrameless = () => ({
+  name: "TEMPLATE Frameless",
   colors: { ...theme({ scheme: "frameless" }) },
+  tokenColors: [...syntax],
+  semanticHighlighting: true,
+});
+const generateThemeFlat = () => ({
+  name: "TEMPLATE Flat",
+  colors: { ...theme({ scheme: "flat" }) },
   tokenColors: [...syntax],
   semanticHighlighting: true,
 });
@@ -15,7 +27,15 @@ fs.mkdir("./themes", { recursive: true })
     Promise.all([
       fs.writeFile(
         "./themes/TEMPLATE-theme.json",
-        JSON.stringify(generatre(), null, 2)
+        JSON.stringify(generateThemeDefault(), null, 2)
+      ),
+      fs.writeFile(
+        "./themes/TEMPLATE-theme-frameless.json",
+        JSON.stringify(generateThemeFrameless(), null, 2)
+      ),
+      fs.writeFile(
+        "./themes/TEMPLATE-theme-flat.json",
+        JSON.stringify(generateThemeFlat(), null, 2)
       ),
     ])
   )

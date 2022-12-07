@@ -25,6 +25,16 @@
         "label": "TEMPLATE",
         "uiTheme": "vs-dark",
         "path": "./themes/TEMPLATE-theme.json"
+      },
+      {
+        "label": "TEMPLATE Frameless",
+        "uiTheme": "vs-dark",
+        "path": "./themes/TEMPLATE-theme-frameless.json"
+      },
+      {
+        "label": "TEMPLATE Flat",
+        "uiTheme": "vs-dark",
+        "path": "./themes/TEMPLATE-theme-flat.json"
       }
     ]
   },

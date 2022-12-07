@@ -1,5 +1,5 @@
 import { ThemeOptions } from ".";
-import { getContrast50 } from "../contrast";
+import { getContrast50 } from "../utils/contrast";
 import { palette } from "./palette";
 
 const borderColor = palette.highlight;
@@ -19,16 +19,16 @@ const defaultColors = {
 
   // Badge
   "badge.background": palette.complementary1,
-  "badge.foreground": palette.activeText,
+  "badge.foreground": getContrast50(palette.complementary1),
 
-  // Badge
+  // Breadcrumb
   "breadcrumb.activeSelectionForeground": palette.activeText,
   "breadcrumb.background": false,
   "breadcrumb.focusForeground": palette.text,
   "breadcrumb.foreground": palette.highlight,
   "breadcrumbPicker.background": palette.primary,
 
-  // button
+  // Buttons
   "button.background": palette.complementary2,
   "button.border": false,
   "button.foreground": getContrast50(palette.complementary2),

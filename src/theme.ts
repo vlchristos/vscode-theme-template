@@ -21,6 +21,8 @@ export const theme = ({ scheme }: ThemeOptions) => {
   const highlightTransparent2 = "#37475773";
   const highlightTransparent3 = "#3747578D";
   const black = "#000000";
+  const error = "#E72F2FFF";
+  const success = "#13D377FF";
 
   const border =
     scheme === "frameless" || scheme === "flat" ? false : highlight;

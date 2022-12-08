@@ -1,4 +1,3 @@
-import { getContrast50 } from "../utils/contrast";
 import { getColors } from "./colors";
 
 export interface ThemeOptions {

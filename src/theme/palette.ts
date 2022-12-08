@@ -7,6 +7,8 @@ export const palette = {
   complementary2: "#54F0A2FF",
   complementary3: "#F0A254FF",
   accent: "#F05454",
+  accentTransparent1: "#F054544C",
+  accentTransparent2: "#F0545498",
   text: "#DDDDDD",
   textSecondary: "#ADB5BDFF",
   activeText: "#FFFFFF",

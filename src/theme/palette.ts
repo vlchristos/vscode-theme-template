@@ -18,4 +18,7 @@ export const palette = {
   highlightTransparent2: "#37475773",
   highlightTransparent3: "#3747578D",
   black: "#000000",
+  success: "#00FF00",
+  error: "#FF0000",
+  warning: "#FFA500",
 };

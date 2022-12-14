@@ -2,7 +2,10 @@ import { ThemeOptions } from ".";
 import { getContrast50 } from "../utils/contrast";
 import { palette } from "./palette";
 
+// Some basic ui colors are defined here
 const borderColor = palette.highlight;
+const editorBackground = palette.secondary;
+const appBackground = palette.primary;
 
 const defaultColors = {
   // Activity bar
@@ -50,7 +53,7 @@ const defaultColors = {
   "dropdown.listBackground": palette.primary,
 
   // Editor
-  "editor.background": palette.secondary,
+  "editor.background": editorBackground,
   "editor.findMatchHighlightBackground": false,
   "editor.findRangeHighlightBackground": false,
   "editor.foreground": palette.text,
@@ -86,7 +89,7 @@ const defaultColors = {
   "editorSuggestWidgetStatus.foreground": false,
   "editorUnnecessaryCode.border": borderColor,
   "editorUnnecessaryCode.opacity": false,
-  "editorWidget.background": palette.secondary,
+  "editorWidget.background": editorBackground,
   "editorWidget.border": borderColor,
   "editorWidget.foreground": palette.text,
   "editorWidget.resizeBorder": false,
@@ -194,17 +197,17 @@ const defaultColors = {
   "settings.modifiedItemIndicator": palette.accent,
 
   // Side Bar
-  "sideBar.background": palette.primary,
+  "sideBar.background": appBackground,
   "sideBar.border": borderColor,
   "sideBar.dropBackground": palette.accentTransparent1,
   "sideBar.foreground": palette.textSecondary,
-  "sideBarSectionHeader.background": palette.primary,
+  "sideBarSectionHeader.background": appBackground,
   "sideBarSectionHeader.border": borderColor,
   "sideBarSectionHeader.foreground": palette.textSecondary,
   "sideBarTitle.foreground": palette.text,
 
   // Status bar
-  "statusBar.background": palette.primary,
+  "statusBar.background": appBackground,
   "statusBar.border": borderColor,
   "statusBar.debuggingBackground": palette.accent,
   "statusBar.debuggingForeground": palette.text,
@@ -216,18 +219,18 @@ const defaultColors = {
   "statusBarItem.errorBackground": false,
   "statusBarItem.errorForeground": false,
   "statusBarItem.hoverBackground": false,
-  "statusBarItem.remoteBackground": palette.primary,
+  "statusBarItem.remoteBackground": appBackground,
   "statusBarItem.remoteForeground": palette.activeText,
   "statusBarItem.warningBackground": false,
   "statusBarItem.warningForeground": false,
 
   // Tab
-  "tab.activeBackground": palette.secondary,
+  "tab.activeBackground": editorBackground,
   "tab.activeBorder": palette.secondary,
   "tab.activeBorderTop": palette.accent,
   "tab.activeForeground": palette.activeText,
   "tab.border": borderColor,
-  "tab.inactiveBackground": palette.primary,
+  "tab.inactiveBackground": appBackground,
   "tab.inactiveForeground": palette.inactiveText,
   "tab.lastPinnedBorder": false,
   "tab.unfocusedActiveBorder": false,
@@ -279,7 +282,7 @@ const defaultColors = {
   "textPreformat.foreground": false,
 
   // Title Bar
-  "titleBar.activeBackground": palette.primary,
+  "titleBar.activeBackground": appBackground,
   "titleBar.activeForeground": palette.activeText,
   "titleBar.border": borderColor,
   "titleBar.inactiveBackground": palette.primary,
